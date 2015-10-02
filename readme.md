@@ -1,4 +1,4 @@
-<h2>Github Follow<h2>
+<h2>Github Follow</h2>
 
 This extension will change the *View* button into *Left* and *Right* buttons on diffs that are file movements.
 
