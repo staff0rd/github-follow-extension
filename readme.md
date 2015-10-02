@@ -11,3 +11,6 @@ Please let me know if you have any issues [here](https://github.com/staff0rd/git
 
 <h3>After</h3>
 ![alt tag](https://raw.github.com/staff0rd/github-follow-extension/master/images/after.png)
+
+<h2>Installation</h2>
+Via [Chrome Web Store](https://chrome.google.com/webstore/detail/github-follow/agalokjhnhheienloigiaoohgmjdpned).
