@@ -17,8 +17,8 @@
   "content_scripts": [
     {
       "matches": [
-        "http://github.com/*",
-        "https://github.com/*"
+        "http://github.com/*/commit/*",
+        "https://github.com/*/commit/*"
       ],
       "js": [
         "bower_components/jquery/dist/jquery.min.js",
