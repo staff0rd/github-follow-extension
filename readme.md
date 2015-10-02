@@ -1,4 +1,4 @@
-<h2>Github Follow<h2>
+<h2>Github Follow</h2>
 
 This extension will change the *View* button into *Left* and *Right* buttons on diffs that are file movements.
 
@@ -13,4 +13,4 @@ Please let me know if you have any issues [here](https://github.com/staff0rd/git
 ![alt tag](https://raw.github.com/staff0rd/github-follow-extension/master/images/after.png)
 
 <h2>Installation</h2>
-Via [Chrome Web Store](https://chrome.google.com/webstore/detail/github-follow/agalokjhnhheienloigiaoohgmjdpned).
+Via [Chrome Web Store](https://chrome.google.com/webstore/detail/github-follow/agalokjhnhheienloigiaoohgmjdpned)
