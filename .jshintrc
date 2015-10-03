@@ -11,6 +11,7 @@
   "immed": true,
   "indent": 2,
   "latedef": "nofunc",
+  "laxcomma": true,
   "newcap": true,
   "noarg": true,
   "quotmark": "single",
