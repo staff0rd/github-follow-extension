@@ -26,6 +26,18 @@
       ],
       "run_at": "document_end",
       "all_frames": false
+    },
+    {
+      "matches": [
+        "http://github.com/*/commits/*",
+        "https://github.com/*/commits/*"
+      ],
+      "js": [
+        "bower_components/jquery/dist/jquery.min.js",
+        "scripts/history.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
     }
   ]
 }
