@@ -6,11 +6,10 @@ Clicking the *Left* button will move you to the full file as it existed in its p
 
 Please let me know if you have any issues [here](https://github.com/staff0rd/github-follow-extension/issues/new).
 
-<h3>Before</h3>
-![alt tag](https://raw.github.com/staff0rd/github-follow-extension/master/images/before.png)
+<h3>Screenshots</h3>
+![Commit History](https://raw.github.com/staff0rd/github-follow-extension/master/images/screenshot1.png)
 
-<h3>After</h3>
-![alt tag](https://raw.github.com/staff0rd/github-follow-extension/master/images/after.png)
+![Commit Diffs](https://raw.github.com/staff0rd/github-follow-extension/master/images/screenshot2.png)
 
 <h2>Installation</h2>
 Via [Chrome Web Store](https://chrome.google.com/webstore/detail/github-follow/agalokjhnhheienloigiaoohgmjdpned)
