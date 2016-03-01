@@ -7,8 +7,9 @@ function saveOptions() {
   }, function() {
     var status = document.getElementById('status');
     status.textContent = 'Options saved.';
+    document.getElementById('oauth_token').value = '';
     setTimeout(function() {
-      status.textContent = '';
+      setTokenStatus(token);
     }, 750);
   });
 }
@@ -17,9 +18,21 @@ function restoreOptions() {
   chrome.storage.sync.get({
     oauthToken: ''
   }, function(items) {
-    document.getElementById('oauth_token').value = items.oauthToken;
+      setTokenStatus(items.oauthToken);
   });
 }
+
+function setTokenStatus(token) {
+    var status = document.getElementById('status');
+    
+    if (token !== '') {
+        status.textContent = 'An OAuth Token is present.  Enter a new one (or blank) to overwrite.';
+    }
+    else {
+        status.textContent = '';
+    }
+}
+
 document.addEventListener('DOMContentLoaded', restoreOptions);
 document.getElementById('save').addEventListener('click',
     saveOptions);
