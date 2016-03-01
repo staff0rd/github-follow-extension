@@ -1,7 +1,14 @@
 'use strict';
 /*jshint -W069 */
 
-check();
+var oauthToken;
+chrome.storage.sync.get({
+	oauthToken: ''
+}, function (items) {
+	oauthToken = items.oauthToken;
+	check();
+});
+
 document.addEventListener('DOMNodeInserted', nodeInsertedCallback);
 
 var timeout;
@@ -40,7 +47,6 @@ function follow(sha, fileName, ownerRepo) {
 	var url = 'https://api.github.com/repos/:owner/:repo/commits?sha=:sha&path=:path'.replace(':owner/:repo', ownerRepo).replace(':sha', sha).replace(':path', fileName);
 
 	get(url).done(function (data) {
-		console.log(data);
 		var fileSha = data[0].sha;
 		var link = '/:owner/:repo/commits/:sha/:fileName'.replace(':owner/:repo', ownerRepo).replace(':sha', fileSha).replace(':fileName', fileName);
 
@@ -59,7 +65,8 @@ function get(url) {
 		type: 'GET',
 		url: url,
 		headers: {
-			'Accept': 'application/vnd.github.v3+json'
+			'Accept': 'application/vnd.github.v3+json',
+			'Authorization': 'token ' + oauthToken
 		}
 	});
 }
