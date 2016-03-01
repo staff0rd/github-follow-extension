@@ -1,6 +1,6 @@
 {
   "name": "__MSG_appName__",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "manifest_version": 2,
   "description": "__MSG_appDescription__",
   "options_page": "options.html",
@@ -8,7 +8,9 @@
     "16": "images/icon-16.png",
     "128": "images/icon-128.png"
   },
-  "permissions": ["storage"],
+  "permissions": [
+    "storage"
+  ],
   "default_locale": "en",
   "background": {
     "scripts": [
@@ -36,7 +38,8 @@
       ],
       "js": [
         "bower_components/jquery/dist/jquery.min.js",
-        "scripts/history.js"
+        "scripts/history.js",
+        "scripts/options.js"
       ],
       "run_at": "document_end",
       "all_frames": false
