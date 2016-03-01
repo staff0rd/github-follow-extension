@@ -23,6 +23,8 @@ Via [Chrome Web Store](https://chrome.google.com/webstore/detail/github-follow/a
 
 <h2>Changelog</h2>
 
+* v1.0.2
+ * Support for private repositories
 * v1.0.1
  * Commit history displays renames and follow button 
 * v1.0.0
