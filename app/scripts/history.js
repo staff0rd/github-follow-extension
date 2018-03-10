@@ -26,7 +26,7 @@ function check() {
 	var split = $('title').text().split(' - ');
 	var ownerRepo = split[1];
 	var fileName = split[0].replace('History for ', '');
-	var sha = $('.commit-links-group:last button').attr('data-clipboard-text');
+	var sha = $('clipboard-copy').last().attr('data-clipboard-text');
 	findMove(sha, fileName, ownerRepo);
 }
 
@@ -61,13 +61,19 @@ function follow(sha, fileName, ownerRepo) {
 }
 
 function get(url) {
+
+	var headers = {
+		'Accept': 'application/vnd.github.v3+json'
+	};
+
+	if (oauthToken) {
+		headers['Authorization'] = 'token ' + oauthToken;
+	}
+
 	return $.ajax({
 		type: 'GET',
 		url: url,
-		headers: {
-			'Accept': 'application/vnd.github.v3+json',
-			'Authorization': 'token ' + oauthToken
-		}
+		headers: headers
 	});
 }
 
