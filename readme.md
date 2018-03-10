@@ -14,18 +14,27 @@ Clicking the *Left* button will move you to the full file as it existed in its p
 Please let me know if you have any issues [here](https://github.com/staff0rd/github-follow-extension/issues/new).
 
 <h2>Screenshots</h2>
+
 ![Commit History](https://raw.github.com/staff0rd/github-follow-extension/master/images/screenshot1.png)
 
 ![Commit Diffs](https://raw.github.com/staff0rd/github-follow-extension/master/images/screenshot2.png)
 
 <h2>Installation</h2>
+
 Via [Chrome Web Store](https://chrome.google.com/webstore/detail/github-follow/agalokjhnhheienloigiaoohgmjdpned)
 
-<h2>Changelog</h2>
+<h2>Build</h2>
 
-* v1.0.2
- * Support for private repositories
-* v1.0.1
- * Commit history displays renames and follow button 
-* v1.0.0
- * Commit diffs display Left/Right buttons
+```
+grunt
+```
+
+<h2>Develop</h2>
+
+In `chrome://extensions`, load an unpacked extension, browse to the `/app` directory in this repo.
+
+Make your changes in `app/scripts.babel`.  Running grunt in watch mode will have chrome auto-refresh the extension while you make changes;
+
+```
+grunt -watch
+```
