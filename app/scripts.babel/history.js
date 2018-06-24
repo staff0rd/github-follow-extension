@@ -1,6 +1,5 @@
 'use strict';
 /*jshint -W069 */
-
 var oauthToken;
 chrome.storage.sync.get({
     oauthToken: ''
@@ -26,7 +25,7 @@ function check() {
 	var split = $('title').text().split(' - ');
 	var ownerRepo = split[1];
 	var fileName = split[0].replace('History for ', '');
-	var sha = $('clipboard-copy').last().attr('data-clipboard-text');
+	var sha = $('clipboard-copy').last().attr('value');
 	findMove(sha, fileName, ownerRepo);
 }
 
