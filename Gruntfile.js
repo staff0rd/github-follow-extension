@@ -302,7 +302,7 @@ module.exports = function (grunt) {
         options: {
           archive: function() {
             var manifest = grunt.file.readJSON('app/manifest.json');
-            return 'package/Github Follow-' + manifest.version + '.zip';
+            return 'package/Follow for Github-' + manifest.version + '.zip';
           }
         },
         files: [{

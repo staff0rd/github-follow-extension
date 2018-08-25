@@ -1,4 +1,4 @@
-<h2>Github Follow</h2>
+<h2>Follow for Github</h2>
 
 This extension currently:
 
