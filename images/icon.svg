@@ -9,14 +9,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="793.70081"
-   height="1122.5197"
-   viewBox="0 0 210 297"
+   width="128"
+   height="128"
+   viewBox="0 0 33.866666 33.866668"
    version="1.1"
    id="svg8"
-   inkscape:export-filename="C:\git\github-follow-extension\app\images\icon-128.png"
-   inkscape:export-xdpi="72.25"
-   inkscape:export-ydpi="72.25"
+   inkscape:export-filename="C:\git\github-follow-extension\images\web-store.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="icon.svg">
   <defs
@@ -71,7 +71,7 @@
        inkscape:vp_x="0 : 148.5 : 1"
        inkscape:vp_y="0 : 1000 : 0"
        inkscape:vp_z="210 : 148.5 : 1"
-       inkscape:persp3d-origin="105 : 99 : 1"
+       inkscape:persp3d-origin="105 : 99.000001 : 1"
        id="perspective4535" />
   </defs>
   <sodipodi:namedview
@@ -82,8 +82,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="395.07744"
-     inkscape:cy="579.29367"
+     inkscape:cx="129.03511"
+     inkscape:cy="-34.59755"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -113,25 +113,27 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,8.392334e-6)"
+     transform="translate(0,-263.13332)"
      style="display:none">
     <rect
        style="fill:#b4d7f6;fill-opacity:1;stroke:#d670b5;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect6054"
-       width="45"
-       height="45"
-       x="82.5"
-       y="125.99998"
-       inkscape:export-xdpi="67.730003"
-       inkscape:export-ydpi="67.730003" />
+       width="25.4"
+       height="25.4"
+       x="4.2333336"
+       y="267.36667"
+       inkscape:export-xdpi="16"
+       inkscape:export-ydpi="16"
+       inkscape:export-filename="C:\git\github-follow-extension\app\images\icon-16.png" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Layer 2">
+     inkscape:label="Layer 2"
+     transform="translate(0,-263.13332)">
     <g
        id="g6067"
-       transform="matrix(1.042374,0,0,1.042374,-13.701823,25.436053)"
+       transform="matrix(0.59948104,0,0,0.59948104,-51.333425,209.29119)"
        style="fill:#292929;fill-opacity:1">
       <g
          style="fill:#292929;fill-opacity:1"
