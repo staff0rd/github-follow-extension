@@ -32,8 +32,7 @@
       ],
       "js": [
         "bower_components/jquery/dist/jquery.min.js",
-        "scripts/history.js",
-        "scripts/options.js"
+        "scripts/history.js"
       ],
       "run_at": "document_end",
       "all_frames": false
