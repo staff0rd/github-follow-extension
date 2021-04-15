@@ -12,12 +12,6 @@
     "storage"
   ],
   "default_locale": "en",
-  "background": {
-    "scripts": [
-      "scripts/chromereload.js",
-      "scripts/background.js"
-    ]
-  },
   "content_scripts": [
     {
       "matches": [
