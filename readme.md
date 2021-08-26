@@ -2,7 +2,7 @@
 
 This extension currently:
 
-- adds a _File moved_ line and _Folow_ button to Comit histories cut short by file movement and;
+- adds a _File moved_ line and _Follow_ button to Commit histories cut short by file movement and;
 - changes the _View_ button into _Left_ and _Right_ buttons on diffs that are file movements.
 
 <h4>Commit History</h4>
