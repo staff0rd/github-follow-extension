@@ -61,13 +61,26 @@ function follow(sha, fileName, ownerRepo) {
 		// var style = '<style>.icon-follow { background-image: url(:iconUrl); background-position: center center; width:16px; height:16px; display: inline-block;</style>'
 		// 	.replace(':iconUrl', iconUrl);
 
-		var template = ['<div id="github-follow" class="commit-group-title"><span class="octicon octicon-git-commit"></span>'
-				,'<strong>Renamed</strong> to :fileName <a class="btn right" href=":link">Follow</a></div>'
+		// Drive File Move from Material Design - https://fonts.google.com/icons?icon.query=move
+		const moveIcon = 'M20,6h-8l-2-2H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V8C22,6.9,21.1,6,20,6z M20,18H4V6h5.17l1.41,1.41 L11.17,8H20V18z M12.16,12H8v2h4.16l-1.59,1.59L11.99,17L16,13.01L11.99,9l-1.41,1.41L12.16,12z';
+
+		var template = [
+			'<div class="TimelineItem TimelineItem--condensed">',
+			'<div class="TimelineItem-badge" style="height: 14px">',
+            `<svg class="octicon octicon-git-commit" style="margin-left: -20px;margin-top: -25px;" height="2" viewBox="0 0 2 2" version="1.1" width="2" aria-hidden="true"><path fill-rule="evenodd" d="${moveIcon}"></path></svg>`,
+          	'</div>',
+			'<div class="TimelineItem-body" style="margin-top:0">',
+			'<h2 class="f5 text-normal">',
+			'<strong>Renamed</strong> to :fileName',
+			'<a class="btn" style="margin-left: 12px" href=":link">Follow</a>',
+			'</h2>',
+			'</div>',
+			'</div>'
 			].join('')
 			.replace(':fileName', fileName)
 			.replace(':link', link);
 
-		$('.commits-listing').append(template);
+		$('.js-navigation-container.mt-3').append(template);
 	});
 }
 
