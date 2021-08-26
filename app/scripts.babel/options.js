@@ -33,6 +33,8 @@ function setTokenStatus(token) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', restoreOptions);
-document.getElementById('save').addEventListener('click',
-    saveOptions);
+if (document) {
+  document.addEventListener('DOMContentLoaded', restoreOptions);
+  document.getElementById('save').addEventListener('click',
+      saveOptions);
+}
