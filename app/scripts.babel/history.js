@@ -10,6 +10,8 @@ chrome.storage.sync.get({
 
 document.addEventListener('DOMNodeInserted', nodeInsertedCallback);
 
+const log = (message) => console.log(`[Follow for GitHub] ${message}`);
+
 var timeout;
 function nodeInsertedCallback(event) {
 	var id = $(event.relatedNode).attr('id');
@@ -33,7 +35,7 @@ function findMove(sha, fileName, ownerRepo) {
 	var url = 'https://api.github.com/repos/:owner/:repo/commits/:sha'.replace(':sha', sha).replace(':owner/:repo', ownerRepo);
 	get(url).done(function(data) {
 		var file = findFile(data.files, fileName);
-		console.log(file.status, fileName);
+		log(`${fileName} was ${file.status}`);
 		if (file.status === 'renamed') {
 			var previousFileName = file['previous_filename'];
 			var parentSha = data.parents[0].sha;
