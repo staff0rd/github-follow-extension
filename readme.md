@@ -1,3 +1,10 @@
+# ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+
+**This extension is no longer needed**
+
+Since [June 2022](https://github.blog/changelog/2022-06-06-view-commit-history-across-file-renames-and-moves/) GitHub have (finally!) implemented this feature themselves. This extension is no longer required.
+# ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+
 <h2>Follow for Github</h2>
 
 This extension currently:
